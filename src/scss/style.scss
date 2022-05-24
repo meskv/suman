@@ -1,0 +1,52 @@
+@import "../scss/font";
+@import "../scss/vairable";
+@import "../scss/font";
+@import "../scss/mixin";
+@import "../scss/global";
+
+@import "../scss/nav";
+@import "../scss/skill";
+@import "../scss/about";
+@import "../scss/project";
+@import "../scss/footer";
+@import "../scss/resume";
+@import "../scss/not-found";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $roboto, $poppins;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li {
+  list-style-type: none;
+}
+
+// scrollbar
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: $black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $ascent-color;
+  border-radius: 5rem;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

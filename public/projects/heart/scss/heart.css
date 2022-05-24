@@ -1,0 +1,71 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.8) rotate(-45deg);
+            transform: scale(0.8) rotate(-45deg);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8) rotate(-45deg);
+            transform: scale(0.8) rotate(-45deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.8) rotate(-45deg);
+            transform: scale(0.8) rotate(-45deg);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8) rotate(-45deg);
+            transform: scale(0.8) rotate(-45deg);
+    opacity: 0.8;
+  }
+}
+
+.heart-beat {
+  text-align: center;
+  margin-bottom: 20rem;
+}
+
+.heart {
+  position: relative;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 0 auto;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: pulse 1.3s infinite;
+          animation: pulse 1.3s infinite;
+}
+
+.heart::after, .heart::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50%;
+}
+
+.heart::after {
+  left: 50%;
+}
+/*# sourceMappingURL=heart.css.map */

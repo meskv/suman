@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
+.title {
+  text-align: center;
+  margin: 1.5rem;
+  color: #fff;
+  background: #000;
+  font-size: 3rem;
+  border: 1px solid #fff;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 60vh;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    cursor: pointer;
+    font-size: 3rem;
+    border: 1px solid white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.75);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .circle {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      height: 80px;
+      width: 80px;
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+
+    .cross {
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+
+      width: 80px;
+      height: 2px;
+
+      background: red;
+      transform: rotate(45deg);
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: red;
+        transform: rotate(90deg);
+
+        width: 80px;
+        height: 2px;
+      }
+    }
+  }
+}
+
+.game-status {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.winner {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.75);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}

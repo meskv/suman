@@ -1,0 +1,49 @@
+section {
+  padding: 2rem 1rem;
+}
+
+.btn {
+  color: $white;
+  background: $ascent-color;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.6rem $box-shadow;
+  transition: 0.6s ease;
+
+  &:hover {
+    background: $white;
+    color: black;
+  }
+}
+
+.page-info {
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: $poppins;
+  color: $white;
+
+  span {
+    color: $ascent-color;
+  }
+}
+
+.underline {
+  @include underline($ascent-color, $white);
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  @include d-flex(center);
+  flex-wrap: wrap;
+  gap: 2rem;
+}

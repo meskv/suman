@@ -1,0 +1,44 @@
+@mixin d-flex($val) {
+  display: flex;
+  justify-content: $val;
+  align-items: center;
+}
+
+@mixin underline($thick-color, $thin-color) {
+  position: relative;
+  width: 20rem;
+  height: 1px;
+  background: $thin-color;
+  border-radius: 2rem;
+  margin: 1rem auto;
+
+  &::before {
+    content: "";
+    width: 6rem;
+    height: 0.6rem;
+    background: $thick-color;
+    border-radius: 2rem;
+    position: absolute;
+    top: -5px;
+    left: 35%;
+  }
+}
+
+@mixin glassFilter($blurVal, $opacity) {
+  background: rgba(255, 255, 255, $opacity);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur($blurVal);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@mixin grid-container($row, $row-width, $column, $col-width, $gap) {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-row: repeat($row, $row-width);
+  grid-template-row: repeat($column, $column-width);
+  gap: gap;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+}

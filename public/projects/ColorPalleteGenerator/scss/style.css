@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#004d7a), color-stop(#008793), color-stop(#00bf72), to(#a8eb12));
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.wrapper .page-info {
+  margin: 1.3rem 0;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.wrapper .page-info .page-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.wrapper .color-pallete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #000;
+}
+
+.wrapper .color-pallete .pallete {
+  width: calc(100% / 6);
+  height: 80vh;
+  color: #000;
+  border: 0.1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .color-pallete .pallete .pallete-info {
+  margin-bottom: 2rem;
+  width: 95%;
+  text-align: center;
+}
+
+.wrapper .color-pallete .pallete .pallete-info .color-info {
+  color: #000, #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 1rem;
+  border: none;
+  display: block;
+  margin: 1.2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background: white;
+  color: #000;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.btn:hover {
+  color: white;
+  background: #000;
+  border: 0.3px solid #000;
+}
+
+@media (max-width: 996px) {
+  .color-pallete .pallete {
+    height: 200px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

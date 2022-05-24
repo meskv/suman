@@ -1,0 +1,48 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.8) rotate(-45deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1)  rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8)  rotate(-45deg);
+    opacity: 0.8;
+  }
+}
+
+.heart-beat {
+  text-align: center;
+  margin-bottom: 20rem;
+}
+.heart {
+  position: relative;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 0 auto;
+  transform: rotate(-45deg);
+
+  //   transition: 0.8s ease-in;
+  animation: pulse 1.3s infinite;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+  }
+
+  &::before {
+    top: -50%;
+  }
+  &::after {
+    left: 50%;
+  }
+}
