@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Home = (props) => {
+const Home = () => {
     return (
         <>
             <div className="hero">
@@ -16,7 +16,7 @@ const Home = (props) => {
                         <h3>Hi, I am Suman</h3>
                         <span>Front-end Developer</span>
                         <p>creative and self-taught programmer I always look to learn  new skills technologies.</p>
-                        <a href="/about" target="blank" className="btn">
+                        <a href="/about" className="btn">
                             About me
                         </a>
                     </div>
@@ -46,6 +46,7 @@ const Home = (props) => {
                     </div>
                 </section>
             </main>
+            google-site-verification: google553e5b8116216db7.html
             <Footer />
         </>
     );

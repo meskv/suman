@@ -15,14 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/events" element={<Events />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/webteam" element={<Webteam />} /> */}
-
         <Route path="/*" element={<NotFound />} />
-
       </Routes>
     </BrowserRouter>
   );
