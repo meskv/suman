@@ -46,7 +46,6 @@ const Home = () => {
                     </div>
                 </section>
             </main>
-            google-site-verification: google553e5b8116216db7.html
             <Footer />
         </>
     );
